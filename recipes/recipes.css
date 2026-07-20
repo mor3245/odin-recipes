@@ -41,7 +41,7 @@ ul {
     list-style-position: inside;
     margin: auto;
 }
-ul li {
+ul li, ol li {
     padding: 4px;
 }
 
