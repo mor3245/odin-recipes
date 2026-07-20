@@ -1,0 +1,43 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #664930;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    background: #FFDBBB;
+    text-align: center;
+    padding: 8px;
+}
+
+.recipe-list {
+    counter-reset: recipe;
+    list-style-position: inside;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.recipe-list li {
+    width: 100%;
+    background: #CCBEB1;
+    margin: 8px 0px;
+    counter-increment: recipe;
+}
+
+.recipe-list li a {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.recipe-list li a::before {
+    content: counter(recipe) ". ";
+}
+
+ .recipe-list li a {
+       padding: 16px 0px;
+}
